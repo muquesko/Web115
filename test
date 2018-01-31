@@ -1,0 +1,111 @@
+#king-header {
+/*d:f*/
+    display: flex;
+/*ai:c*/
+    align-items: center;
+/*pl:20px*/
+    padding-left: 20px;
+/*c*/
+    color: gold;
+/*bgc*/
+    background-color: gold;
+    font-family: sans-serif;
+}
+
+body {
+   background-color: mintcream;
+}
+
+main {
+    color: black;
+    margin-bottom: auto;
+    margin-left: left;
+    padding: 10px;
+}
+
+.character-image {
+    width: 155px;
+    height: 385px;
+}
+
+@keyframes change-color {
+    0% {background-color: red;}
+    16% {background-color: orange;}
+    46% {background-color: yellow;}
+    60% {background-color: green;}
+    75% {background-color: blue;}
+    90% {background-color: purple}
+    100% {background-color: red;}
+}
+
+.box-rainbow {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: change-color;
+    animation-duration: 4s;
+}
+
+@keyframes move {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        left: 200px; 
+        top: 200px;
+    }
+    75% {
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+
+.box-move {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: mediumpurple;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: 1s; 
+}
+
+@keyframes move {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        left: 200px; 
+        top: 200px;
+    }
+    75% {
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+.box-move {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: mediumpurple;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: 1s; 
+}
