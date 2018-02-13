@@ -3,22 +3,18 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=""Gloria Hallelujah">
-    <title>Home</title>
+    <title>Shop</title>
 </head>
 <body>
     <header>
         <nav class="nav-bar flex-center">
-            <a href="index.html">
-                <img src="assets/logo-active.png" alt="logo of Coffee Cave" class="logo flex-center">
-            </a>
+                <a href="index.html"><img src="assets/logo.png" alt="Home" class="logo flex-center"></a>
             <ul>
                 <li>
                     <a href="menu.html" class="nav-button flex-center"><h3>Menu</h3></a>
                 </li>
                 <li>
-                    <a href="shop.html" class="nav-button flex-center"><h3>Shop</h3></a>
+                    <a href="shop.html" class="active-nav-button flex-center"><h3>Shop</h3></a>
                 </li>
                 <li>
                     <a href="about.html" class="nav-button flex-center"><h3>About</h3></a>
@@ -29,13 +25,27 @@
             </ul>
         </nav>    
         <div class="banner">
-            <h1>Coffee Cave Home</h1>
+            <h1>Coffee Cave Shop</h1>
         </div>
     </header>
     <main>
-        <img src="assets/photos/jumbotron.jpg" alt="jumbotron" class="jumbotron">
-        <div class="slogan"><h2>I'm a bear when I don't have my coffee</h2></div>
-        <img src="assets/grumpybrewno.png" alt="bear holding coffee" class="grumpy-bruno">
+        <ul class="menu-column">
+            <li class="flex-center flex-column">
+                <img src="assets/photos/coffeecontainer.jpg" alt="Sausage ina  blanket" class="medium-sized-image">
+                <h3>Coffee Beans</h3> 
+                <p>Price: $3.42</p>
+            </li>
+            <li class="flex-center flex-column"> 
+                <img src="assets/photos/honeypourer.jpg" alt="eclair" class="medium-sized-image">
+                <h3>Honey Pourer</h3> 
+                <p>Price: $10.00</p>
+            </li>
+            <li class="flex-center flex-column">
+                <img src="assets/photos/coffeemachine.jpg" alt="cinnamonroll" class="medium-sized-image">
+                <h3>Espresso machine</h3> 
+                <p>Price: $400.00</p>
+            </li>
+        </ul>
     </main>
 
     <footer> 

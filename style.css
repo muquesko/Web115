@@ -1,101 +1,204 @@
-li{
-    list-style: none;
-    padding-left: 15px;
-}
-.menu-bar ul{
-        display: flex;
-        flex-flow: row;
-}
-#king-header {
-/*d:f*/
-    display: flex;
-    flex-flow: row;
-/*ai:c*/
-    align-items: center;
-/*pl:20px*/
-    padding-left: 20px;
-/*c*/
-    color: gold;
-/*bgc*/
-    background-color: gold;
-    font-family: sans-serif;
+body {
+    margin: 0px;
 }
 
-body {
-   background-color: mintcream;
+ul {
+    list-style: none;  
+}
+
+li {  
+    list-style: none;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+   flex-flow: column; 
+}
+
+.logo {
+    width: 85px;
+    height: 120px;
+    padding-top: 15px;
+    
+}
+
+.nav-bar ul {
+    display: flex;
+    padding: 0px;
+    margin: 0;
+    padding-top: 45px;
+    
+}
+
+.nav-button {
+    background-color: black;
+    width: 100px;
+    height: 45px;
+    border-radius: 15px;
+    margin-left: 5em;        
+    font-size: 1.3em;
+    color: black;
+    
+}
+
+.active-nav-button {
+    background-color: #006600;
+    width: 100px;
+    height: 45px;
+    border-radius: 15px;
+    margin-left: 5em;        
+    font-size: 1.3em;
+}
+
+.nav-bar  {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*Banners*/
+
+.banner {
+    background: linear-gradient(to right, #996600, #006600);
+    color: #ffff99;
+    border: solid black;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    height: 85px;
+    border-width: 4px 0;
+    padding: 4px 16px;
+}
+
+.menu-column {
+    column-count: 3;
+    column-gap: 15px;
+    column-rule: 1px solid #006600;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu-column li {
+    flex: 1;
+    padding-left: 36s;
+    padding-right: 36px;
+    
+}
+
+/*Text*/
+
+h1{
+    font-family: Gloria Hallelujah; 
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: Mv Boli;  
+    font-size: 2em;
+}
+
+h3 {
+    font-family: Calibri;
+    font-size: 1.3em;
+}
+
+p {
+    font-family: Times new roman;
+    font-size: 1em;
+    flex: 1;
+}
+
+/*link information*/
+
+a:link {
+    color: #ffff99;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color: #ffff99;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #ffffe6;
+    text-decoration-line: none;
+}
+
+a:active {
+    color: #ffffe6;
+    text-decoration-line: none;
+}
+.slogan {
+    color: #006600;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.grumpy-bruno {
+    width: 400px;
+    height: 350px;
+}
+
+.owners {
+    width: 400px;
+    height: 350px;
+}
+.medium-sized-image {
+    height: 196px;
+    width: 230px;
+}
+
+.jumbotron {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-top: 25px;
+    height: 700px;
+    width: 800px;
+}
+/*words*/
+.menu-title {
+    color: #006600;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 main {
-    color: black;
-    margin-bottom: auto;
-    margin-left: left;
-    padding: 10px;
-}
-
-.character-image {
-    width: 155px;
-    height: 385px;
-}
-.box {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    display: inline-block;
-}
-@keyframes change-color {
-    0% {background-color: red;}
-    16% {background-color: orange;}
-    46% {background-color: yellow;}
-    60% {background-color: green;}
-    75% {background-color: blue;}
-    90% {background-color: purple}
-    100% {background-color: red;}
-}
-
-.box-rainbow {
-    background-color: red;
-    animation-name: change-color;
-    animation-duration: 4s;
-}
-
-@keyframes box-move-left {
-    from {left: 0px;}
-    to {left: 200px;}
-
-}
-    
-.box-left {
-    background-color: red;
-    animation-name: box-move-left;
-    animation-duration: 4s;
-    animation-delay: 2s;
-}
-    
-@keyframes box-move-right {
-    from {left: 300px;}
-    to {left: 200px;}
-
-}
-    
-.box-right {
-    background-color: mediumpurple;
-    animation-name: box-move-right;
-    animation-duration: 4s;
-    animation-delay: 2s;
-    left: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
     
 }
-
-@keyframes repeat-animation {
-    0% {left: 0px;}
-    50% {left: 200px;}
-    100% {left: 0px;}
+.about-text {
+    width: 500px;
+    text-align: left;
+    text-indent: 50px;
 }
 
-.ball {
-    background-color: red;
-    animation-name: repeat-animation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    
+.app {
+   width: 80px;
+    height: 80px;
+    color: #ffff99;
+    background-color: #996600;
+    border-radius: 5px;
+    padding-left: 28px;
 }
