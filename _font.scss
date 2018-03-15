@@ -1,0 +1,77 @@
+$font-main: 'Baloo Bhaijaan', cursive;
+$font-second: 'Salsa', cursive;
+$font-third: 'Calibri';
+$font-paragraph: 'Times New Roman';
+
+
+    /* unvisited link */
+    a:link {
+        color: $black;
+        text-decoration: underline;
+    }
+
+    /* visited link */
+    a:visited {
+        color: $black;
+        text-decoration: underline;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: $green;
+        
+    }
+
+    /* selected link */
+    a:active {
+        color: $green;
+}
+
+    p {
+        font-family: $font-paragraph; 
+        padding-top: 14px;
+        padding-bottom: 14px;
+        
+    }
+
+    h6 {
+        color: $white;
+        font-family: $font-third;
+        line-height: 100px;
+       
+}
+    h5 {
+        color: $tan;
+        font-family: $font-third; 
+        line-height: 100px;
+        
+}
+
+    h4 {
+        color: $tan;
+        font-family: $font-second;
+        line-height: 100px;
+        
+}
+        
+    h3 {
+        color: $tan;
+        font-family: $font-second;
+        line-height: 100px;
+       
+
+}
+
+    h2 {
+        color: $tan;
+        font-family: $font-main;
+        
+}
+    h1 {
+        color: $tan;
+        font-family: $font-main;
+        
+}
+        
+
+

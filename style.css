@@ -1,204 +1,259 @@
+html {
+    height: 100%
+}
+
 body {
+    background-color: hotpink;
     margin: 0px;
+    height: 100%;
 }
 
-ul {
-    list-style: none;  
+header {
+    background-color: darkred;
+    padding: 15px;
+    color: yellow;
 }
 
-li {  
-    list-style: none;
-}
-
-.flex-center {
+header ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row;  
 }
 
-.flex-column {
-   flex-flow: column; 
+header li  {
+   padding: 10px;
 }
 
-.logo {
-    width: 85px;
-    height: 120px;
-    padding-top: 15px;
-    
-}
-
-.nav-bar ul {
-    display: flex;
-    padding: 0px;
-    margin: 0;
-    padding-top: 45px;
-    
-}
-
-.nav-button {
-    background-color: black;
-    width: 100px;
-    height: 45px;
-    border-radius: 15px;
-    margin-left: 5em;        
-    font-size: 1.3em;
-    color: black;
-    
-}
-
-.active-nav-button {
-    background-color: #006600;
-    width: 100px;
-    height: 45px;
-    border-radius: 15px;
-    margin-left: 5em;        
-    font-size: 1.3em;
-}
-
-.nav-bar  {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-/*Banners*/
-
-.banner {
-    background: linear-gradient(to right, #996600, #006600);
-    color: #ffff99;
-    border: solid black;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 45px;
-    height: 85px;
-    border-width: 4px 0;
-    padding: 4px 16px;
-}
-
-.menu-column {
-    column-count: 3;
-    column-gap: 15px;
-    column-rule: 1px solid #006600;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.menu-column li {
-    flex: 1;
-    padding-left: 36s;
-    padding-right: 36px;
-    
-}
-
-/*Text*/
-
-h1{
-    font-family: Gloria Hallelujah; 
-    font-size: 2.5em;
-}
-
-h2 {
-    font-family: Mv Boli;  
-    font-size: 2em;
-}
-
-h3 {
-    font-family: Calibri;
-    font-size: 1.3em;
-}
-
-p {
-    font-family: Times new roman;
-    font-size: 1em;
-    flex: 1;
-}
-
-/*link information*/
-
-a:link {
-    color: #ffff99;
-    text-decoration-line: none;
-}
-
-a:visited {
-    color: #ffff99;
-    text-decoration-line: none;
-}
-
-a:hover {
-    color: #ffffe6;
-    text-decoration-line: none;
-}
-
-a:active {
-    color: #ffffe6;
-    text-decoration-line: none;
-}
-.slogan {
-    color: #006600;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-content: center;
-}
-.grumpy-bruno {
-    width: 400px;
-    height: 350px;
-}
-
-.owners {
-    width: 400px;
-    height: 350px;
-}
-.medium-sized-image {
-    height: 196px;
-    width: 230px;
-}
-
-.jumbotron {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-content: center;
-    padding-top: 25px;
-    height: 700px;
-    width: 800px;
-}
-/*words*/
-.menu-title {
-    color: #006600;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-content: center;
+header p {
+    padding-top: 10px;
 }
 
 main {
     display: flex;
-    flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    
-}
-.about-text {
-    width: 500px;
-    text-align: left;
-    text-indent: 50px;
+    color: white;
+    margin-bottom: auto;
+    padding: 25px;
+    min-height: 850px;
 }
 
-.app {
-   width: 80px;
-    height: 80px;
-    color: #ffff99;
-    background-color: #996600;
-    border-radius: 5px;
-    padding-left: 28px;
+.title {
+    background-color: blue;
+    color: white;
+    border-color: chocolate;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
+
+.intro {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.logo {
+    width: 250px;
+    padding-left: 72px;
+
+}
+
+/*
+Mr. Jenkins' belly
+*/
+
+
+.slideshow1 {
+    display: flex;
+    width: 828px;
+    flex-flow: row-reverse;
+}
+
+
+.slideshow1 ul {
+    padding: 0;
+    margin: 0;
+    display: flex;   
+   
+}
+
+
+#jenkins-main-pic {
+   width: 768px;
+   height: 99%;
+  
+  
+}
+
+/*main-pic ul*/
+
+.image-selection-option1 {
+    display: flex;
+    flex-flow: column;    
+}
+
+.image-selection-option1 li {
+    display: flex;
+    flex-flow: column;
+ 
+}
+
+.slideshow1 img {
+    width: 70px;
+    padding: 2px;
+   
+}
+
+.image-selection-option1 li :hover {
+    cursor: pointer;
+}
+
+.image-selection-option1 li :onkeydown  {
+    cursor: alias;
+    
+}
+
+.image-selection-option1 li :onkeypress  {
+    cursor: alias;
+}
+
+.image-selection-option1 li :onkeyup {
+    cursor: alias;
+}
+
+/*A Way to Understand*/
+
+.slideshow2 {
+    display: flex;
+    width: 828px;
+    flex-flow: row;
+}
+
+.slideshow2 ul {
+    padding: 0;
+    padding-left: 14px;
+    margin: 0;    
+}
+
+.image-selection-option2 li {
+    padding: 2px;
+}
+
+#understand-main-pic {
+   width: 421px;
+   height: 99%;
+}
+
+.slideshow2 img {
+    width: 70px;
+     
+}
+
+.image-selection-option2 li :hover {
+    cursor: pointer;
+}
+
+.image-selection-option2 li :onkeydown  {
+    cursor: alias;
+    
+}
+
+.image-selection-option2 li :onkeypress  {
+    cursor: alias;
+}
+
+.image-selection-option2 li :onkeyup {
+    cursor: alias;
+}
+
+/*Space hierarchy*/
+
+.slideshow3 {
+    display: flex;
+    width: 828px;
+    flex-flow: column;
+}
+
+
+.slideshow3 ul {
+    padding: 0;
+    margin: 0;   
+}
+
+#space-main-pic {
+   width: 768px;
+   height: 99%;
+  
+}
+
+/*main-pic ul*/
+
+.image-selection-option3 {
+    display: flex;  
+}
+
+.image-selection-option3 li {
+    display: flex;
+    flex-flow: column;
+ 
+}
+
+.slideshow3 img {
+    width: 70px;
+    padding: 2px;
+   
+}
+
+.image-selection-option3 li :hover {
+    cursor: pointer;
+}
+
+.image-selection-option3 li :onkeydown  {
+    cursor: alias;
+    
+}
+
+.image-selection-option3 li :onkeypress  {
+    cursor: alias;
+}
+
+.image-selection-option3 li :onkeyup {
+    cursor: alias;
+}
+
+footer {
+    background-color: darkred;
+    min-height: 100px;
+    padding: 15px;
+    color: white;
+
+}
+
+a:link {
+    color: yellow;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color: yellow;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: lawngreen;
+    text-decoration-line: none;
+}
+
+a:active {
+    color: lawngreen;
+    text-decoration-line: none;
+}
+
+li {
+    list-style: none;
+}
+
