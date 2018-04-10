@@ -1,6 +1,2 @@
-sass –v (shows me version of sass)
-brackets $profile
-
-
-cd documents/developement/web115/huqstuff
+cd documents/developement/web115/howtoblob
 sass --watch scss:css
