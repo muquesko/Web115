@@ -1,259 +1,243 @@
-html {
-    height: 100%
-}
-
 body {
-    background-color: hotpink;
+   background-color: mintcream;
     margin: 0px;
     height: 100%;
 }
-
-header {
-    background-color: darkred;
-    padding: 15px;
-    color: yellow;
-}
-
-header ul {
+#king-header {
+/*d:f*/
     display: flex;
-    flex-flow: row;  
-}
-
-header li  {
-   padding: 10px;
-}
-
-header p {
-    padding-top: 10px;
-}
-
-main {
-    display: flex;
-    justify-content: center;
+    flex-flow: row;
+    height: 100px;
+    width: 100%;
+    border: solid 5px purple;
+/*ai:c*/
     align-items: center;
-    color: white;
+    justify-content: center;
+/*c*/
+    color: purple;
+/*bgc*/
+    background-color: gold;
+    font-family: sans-serif;
+}
+.menu-bar ul{
+        display: flex;
+        flex-flow: row;
+}
+
+.menu-bar li {
+        padding: 15px;
+    }
+main {
+    color: black;
     margin-bottom: auto;
     padding: 25px;
-    min-height: 850px;
-}
-
-.title {
-    background-color: blue;
-    color: white;
-    border-color: chocolate;
-    height: 45px;
-    width: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.intro {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-content: center;
-    
-}
-
-.logo {
-    width: 250px;
-    padding-left: 72px;
-
-}
-
-/*
-Mr. Jenkins' belly
-*/
-
-
-.slideshow1 {
-    display: flex;
-    width: 828px;
-    flex-flow: row-reverse;
-}
-
-
-.slideshow1 ul {
-    padding: 0;
-    margin: 0;
-    display: flex;   
-   
-}
-
-
-#jenkins-main-pic {
-   width: 768px;
-   height: 99%;
-  
-  
-}
-
-/*main-pic ul*/
-
-.image-selection-option1 {
-    display: flex;
-    flex-flow: column;    
-}
-
-.image-selection-option1 li {
-    display: flex;
-    flex-flow: column;
- 
-}
-
-.slideshow1 img {
-    width: 70px;
-    padding: 2px;
-   
-}
-
-.image-selection-option1 li :hover {
-    cursor: pointer;
-}
-
-.image-selection-option1 li :onkeydown  {
-    cursor: alias;
-    
-}
-
-.image-selection-option1 li :onkeypress  {
-    cursor: alias;
-}
-
-.image-selection-option1 li :onkeyup {
-    cursor: alias;
-}
-
-/*A Way to Understand*/
-
-.slideshow2 {
-    display: flex;
-    width: 828px;
-    flex-flow: row;
-}
-
-.slideshow2 ul {
-    padding: 0;
-    padding-left: 14px;
-    margin: 0;    
-}
-
-.image-selection-option2 li {
-    padding: 2px;
-}
-
-#understand-main-pic {
-   width: 421px;
-   height: 99%;
-}
-
-.slideshow2 img {
-    width: 70px;
-     
-}
-
-.image-selection-option2 li :hover {
-    cursor: pointer;
-}
-
-.image-selection-option2 li :onkeydown  {
-    cursor: alias;
-    
-}
-
-.image-selection-option2 li :onkeypress  {
-    cursor: alias;
-}
-
-.image-selection-option2 li :onkeyup {
-    cursor: alias;
-}
-
-/*Space hierarchy*/
-
-.slideshow3 {
-    display: flex;
-    width: 828px;
-    flex-flow: column;
-}
-
-
-.slideshow3 ul {
-    padding: 0;
-    margin: 0;   
-}
-
-#space-main-pic {
-   width: 768px;
-   height: 99%;
-  
-}
-
-/*main-pic ul*/
-
-.image-selection-option3 {
-    display: flex;  
-}
-
-.image-selection-option3 li {
-    display: flex;
-    flex-flow: column;
- 
-}
-
-.slideshow3 img {
-    width: 70px;
-    padding: 2px;
-   
-}
-
-.image-selection-option3 li :hover {
-    cursor: pointer;
-}
-
-.image-selection-option3 li :onkeydown  {
-    cursor: alias;
-    
-}
-
-.image-selection-option3 li :onkeypress  {
-    cursor: alias;
-}
-
-.image-selection-option3 li :onkeyup {
-    cursor: alias;
-}
-
-footer {
-    background-color: darkred;
-    min-height: 100px;
-    padding: 15px;
-    color: white;
-
-}
-
-a:link {
-    color: yellow;
-    text-decoration-line: none;
-}
-
-a:visited {
-    color: yellow;
-    text-decoration-line: none;
-}
-
-a:hover {
-    color: lawngreen;
-    text-decoration-line: none;
-}
-
-a:active {
-    color: lawngreen;
-    text-decoration-line: none;
+    min-height: 550px;
 }
 
 li {
     list-style: none;
 }
 
+.character-image {
+    width: 155px;
+    height: 385px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+}
+@keyframes change-color {
+    0% {background-color: red;}
+    16% {background-color: orange;}
+    46% {background-color: yellow;}
+    60% {background-color: green;}
+    75% {background-color: blue;}
+    90% {background-color: purple}
+    100% {background-color: red;}
+}
+
+.box-rainbow {
+    background-color: red;
+    animation-name: change-color;
+    animation-duration: 4s;
+}
+
+@keyframes box-move-left {
+    from {left: 0px;}
+    to {left: 200px;}
+
+}
+    
+.box-left {
+    background-color: red;
+    animation-name: box-move-left;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+    
+@keyframes box-move-right {
+    from {left: 300px;}
+    to {left: 200px;}
+
+}
+    
+.box-right {
+    background-color: mediumpurple;
+    animation-name: box-move-right;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    left: 300px;
+    
+}
+
+@keyframes repeat-animation {
+    0% {left: 0px;}
+    50% {left: 200px;}
+    100% {left: 0px;}
+}
+
+.ball {
+    background-color: red;
+    animation-name: repeat-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+.slideshow {
+    display: flex;
+    width: 300px;
+}
+
+#rollover {
+   width: 384px;
+   height: 99%;
+   flex: 1;
+  
+}
+
+.slideshow ul {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    margin: 0;
+    height: 277px;
+    justify-content: space-between;
+    padding-left: 5px;
+   
+}
+
+#rollover li {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    
+}
+
+.image-selection-option li :hover {
+    cursor: pointer;
+}
+
+.image-selection-option li :onkeydown  {
+    cursor: alias;
+    
+}
+
+.image-selection-option li :onkeypress  {
+    cursor: alias;
+}
+
+.image-selection-option li :onkeyup {
+    cursor: alias;
+}
+
+
+.slideshow img {
+    width: 59.3px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    border: solid 5px purple;
+    padding: 5px;
+}
+.row ol {
+    padding: 5px;
+}
+
+.reverse-row {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    border: solid 5px purple;
+    padding: 5px;
+}
+
+.reverse-row ol {
+    padding: 5px;
+}
+
+.column {
+    display: flex;
+    flex-flow: column;
+    border: solid 5px purple;
+    padding: 5px;
+}
+
+.column ol {
+    padding: 5px;
+}
+
+.reverse-column {
+    display: flex;
+    flex-flow: column-reverse;   
+    border: solid 5px purple;
+    padding: 5px;
+}
+
+.reverse-column ol {
+    padding: 5px;
+}
+
+.flex-box {
+    width: 100px;
+    border: solid 2px purple;
+}
+
+/* unvisited link */
+a:link {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+    color: darkblue;
+
+}
+
+/* selected link */
+a:active {
+    color: darkblue;
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    border: solid 5px purple;
+    color: purple;
+    background-color: gold;
+    font-family: sans-serif;
+}
