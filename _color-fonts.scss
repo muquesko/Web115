@@ -1,0 +1,58 @@
+$main-font: 'Baloo Bhaijaan', cursive;
+$sub-font: 'PT Sans', sans-serif;
+$brown: #784212;
+$purple: #5B2C6F;
+$black: #17202A;
+$red: #CB4335;
+
+body {
+  font-family: $main-font;
+  color: $brown;
+}
+
+.top-bar {
+    font-family: $main-font;
+    background-color: $brown;
+}
+
+.brown {
+    background-color: $brown;
+}
+
+.purple {
+    background-color: $purple;
+}
+
+.black {
+    background-color: $black;
+}
+
+.red {
+    background-color: $red;
+}
+li {
+    list-style: none;
+    color: $purple;
+}
+
+.color-row li {
+    height: 50px;
+    color: white;
+    font-family: $sub-font; 
+}
+
+.color-box {
+    margin: 41px;
+}
+
+.title {
+    background-color: $red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+h1 {
+    font-family: $main-font;
+}

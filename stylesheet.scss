@@ -1,45 +1,5 @@
-html {
-    width: 100%;
-}
-
-body {
-    width: 100%;
-
-}
-
-main {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.progress-bar {
-    color: black;
-    background: hotpink;
-    text-align: center;
-}
-
-header h1 {
-    color: hotpink;
-    font-family: "cooper black";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.jumbotron img {
-    width: auto;
-    height: 300px;
-}
-.dropdown-menu {
-    left: 47%;
-    padding: 15px;
-}
-.dropdown {
-    margin: 20px;
-}
-
-.img-rounded {
-    margin: 20px;
-}
+@import url('https://fonts.googleapis.com/css?family=Dosis|PT+Sans');
+@import "_normalize.scss";
+@import "_foundation.scss";
+@import "_foundation.min.scss";
+@import "_color-fonts.scss";
