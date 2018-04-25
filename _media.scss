@@ -1,122 +1,36 @@
-html {
-
-}
-
-body {
-    height: 100%;
-    
-}
-
-.nav-bar  {
+menu {
     display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    %logo-style {
-        width: 85px;
-        height: 120px;
-        padding-top: 15px;
-    }
-    .logo {
-        @extend %logo-style;
-            
-    }
-    .active-logo {
-        @extend %logo-style;
-    }
-    ul { 
-        display: flex;
-        padding: 0px;
-        margin: 0;
-        padding-top: 45px;
-        .nav-button {
-            background-color: $button-color;
-            @include button; 
-        }
-        .active-nav-button {
-            background-color: $active-button-color;
-            @include button;
-        }    
-    }
-}
-
-.banner {
-    background: $tan;
-    color: $white;
-    border: solid black;
-    display: flex;
-    flex: 0;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 45px;
-    height: 85px;
-    border-width: 4px 0;
-    padding: 4px 16px; 
-}
-
-main {
-    display: flex;
-    flex: 1;
-    flex-flow: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding: 14px;
-    
-    .slogan-picture {
-        max-width: 700px;
-        max-height: 700px;
-    }
 }
 
-footer {
-    background: $tan;
-    border: solid black;
+.top-bar {
+    font-family: $main-font;
+    background-color: $purple;
+    height: 100px;
+}
+
+.menu-icon {
+    background-color: $purple;
+}
+
+.title {
+    background-color: $red;
+    color: $purple;
+    margin-top: 34px;
+}
+
+.flex-center {
     display: flex;
-    flex-flow: row;
     align-items: center;
-    justify-content: space-between;
-    height: 85px;
-    border-width: 4px 0;
-    padding: 4px 32px;
-    
-    a:hover,
-    a:active,
-    a:focus {
-        color: $white;   
-    }
+    justify-content: center;
 }
 
-.news-logo {
-    flex: 1;
-    height: 300px;
-    margin-left: 10px;
-}
-
-.computer {
-    height: 300px;
-    display: flex;
-    flex: 1;
-    align-items: left;
-    justify-content: left;
-}
-
-.jenkins-logo {
-    @include series-logo;
-}
-
-.understand-logo {
-    @include series-logo;
-    
-}
-.crush {
-    @include author;
-}
-
-.muquesko {
-    @include author;
+.color-box {
+    margin: 41px;
+    height: 50px;
+    color: white;
+    font-family: $sub-font; 
 }
 
 

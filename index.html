@@ -1,114 +1,64 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="huqstuff/assets/not-active-home.png" type="image/png" sizes="16x16">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-</head>
-<body>
-<header id="king-header">
-       <a href="index.html">
-        <h1>Sidra's Web115</h1>
-        </a>
-        <nav class="menu-bar">
-            <ul>
-                <li><a href="emmet.html">Emmet</a></li>
-                <li><a href="checks.html">Usability check</a></li>
-                <li><a href="animation.html">Animation</a></li>
-                <li><a href="coffeecave/index.html">Coffee Cave</a></li>
-                <li><a href="huqstuff/index.html">Huqstuff</a></li>
-                <li><a href="javascript.html">Javascript</a></li>
-                <li><a href="php/index.php">Php project</a></li>
-                <li><a href="flexbox.html">FlexBox</a></li>
-                <li><a href="huqpics/index.php">Huqpics</a></li>
-                <li><a href="bootstrap-project/index.html">Bootstrap</a></li>
-                <li><a href="bootstrapnav/index.html">Navigation</a></li>
-                <li><a href="bootstrap-form-project/index.html">Form</a></li>
-                <li><a href="howtoblob/index.html">How to blob</a></li>
-                <li><a href="hajjss-inc/index.html">Hajjss inc.</a></li>
+    <link rel="stylesheet" href="css/stylesheet.css"/>
+    
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+   <header>
+        <nav class="top-bar" data-topbar>
+           
+            <ul class="title-area">
+                <li class="home-button">
+                   <a href="index.html"><img src="assets/logo.png" alt="logo of Hajjss inc." class="logo"></a>
+                </li> 
+                <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
             </ul>
+            <section class="top-bar-section">
+                <ul class="right">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="houses.html">Houses</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="color-fonts.html">Color and fonts</a></li>
+                <li><a href="../index.html">Back to Web115</a></li>
+                </ul>
+            </section>
         </nav>
-</header>
+   </header>
     <main>
-        <h1>All the projects I've done</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="emmet.html">
-                        <h2>Emmet</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="checks.html">
-                        <h2>Usability check</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="animation.html">
-                        <h2>Animation</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="coffeecave/index.html">
-                        <h2>Coffee Cave</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="huqstuff/index.html">
-                        <h2>Huqstuff</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript.html">
-                        <h2>Javascript</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="php/index.php">
-                        <h2>Php project</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="flexbox.html">
-                        <h2>FlexBox</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="huqpics/index.php">
-                        <h2>Huqpics</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="bootstrap-project/index.html">
-                        <h2>Bootstrap</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="bootstrapnav/index.html">
-                        <h2>Navigation</h2>
-                    </a>
-                </li>
-                <li>
-                    <a href="bootstrap-form-project/index.html">
-                       <h2>Form</h2>              
-                    </a>
-                </li>
-                <li>
-                    <a href="howtoblob/index.html">
-                       <h2>How to blob</h2>              
-                    </a>
-                </li>
-                 <li>
-                    <a href="hajjss-inc/index.html">
-                       <h2>Hajjss inc.</h2>              
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <div class="row">
+       <div class="panel title flex-center">
+           <h1>Home</h1>
+        </div>
+    </div>
+    <div class="row flex-center">
+        <img src="assets/logo.png" alt="logo of Hajjss inc." class="logo"> 
+    </div>
+     <div class="row">
+         <h2 class="small-12 columns flex-center">Welcome to Hajjss inc.</h2>
+        
+          <p class="small-12 columns flex-center"> Were we fix, rent, and sell houses
+            “As a family company we know family comes first”</p>
+     </div>
     </main>
+
 <footer>
-    <p>Copyright &copy; 2018 Huqstuff. All rights reserved.</p>
+  <div class="row">
+   <div class="title flex-center">
+    <h3>Copyright &copy; 2018 Hajjss inc. belongs to Aijaz Huq</h3>
+ </div>
+ </div>
 </footer>
-</body>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>
