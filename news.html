@@ -1,56 +1,77 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<link rel="stylesheet" href="css/style.css"> 
-    <link rel="icon" href="assets/not-active-home.png" type="image/png" sizes="16x16">
+    <meta property="og:title" content="Huqstuff">
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://shuq.mccdgm.net/web115/411onautism/assets/logo.png">
+    <meta property="og:description" content="Get the 411 on Autism">
+    <meta property="og:url" content="https://shuq.mccdgm.net/web115/411onautism/index.html" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-indigo.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png" type="image/png" sizes="16x16">
     <title>News</title>
 </head>
-
 <body>
-<header>
-     <nav class="nav-bar flex-center">
-
-            <a href="index.html"><img src="assets/not-active-home.png" alt="logo of huqstuff" class="logo flex-center"></a>
-            <ul>
-                <li>
-                    <a href="news.html" class="active-nav-button flex-center"><h6>News</h6></a>
-                </li>
-                <li>
-                    <a href="authors.html" class="nav-button flex-center"><h6>Authors</h6></a>
-                </li>
-                <li>
-                    <a href="contact.html" class="nav-button flex-center"><h6>Contact</h6></a>
-                </li>
-                <li>
-                    <a href="series.html" class="nav-button flex-center"><h6>Series</h6></a>
-                </li>
-            </ul>
-        </nav>
-        <h1 class="banner">News</h1>
-</header>
-
-<main>
-    <h1>February 17th</h1> 
-<img src="assets/news.png" alt="A newspaper" class="news-logo">   
-<ul>
-    <h2>Holiday and birthdays</h2>
-       <ul>
-        <li>It’s Black History Month!</li>
-        <li>Have a good Lent, to those who celebrate it!</li>
-        </ul>
-    <h2>Website news</h2>
-       <ul>
-        <li> I won’t be as active because of college, but on the bright side, I’m learning HTML in college.</li>
-        <li>This Website is under much construction, I shall let you know when it’s finished.</li>
-        <li>I got a Twitter account! It’s Muquesko Tokisis</li>
-        </ul>
-</ul>
-</main>
-
-<footer>
-    <p>Copyright &copy; 2018 Huqstuff. All rights reserved.</p>
-    <a href="../index.html"><p>Back to Web115</p></a>
-</footer>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <a class="mdl-navigation__link" href="index.html"><h3>411 on Autism</h3></a><img src="assets/logo.png" alt="logo of 411 on Autism." class="logo">
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
+        <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
+        <a class="mdl-navigation__link" href="events.html">Past events</a>
+        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="members.html">Members</a>
+        <a class="mdl-navigation__link" href="contact.html">Contact</a>
+        <a class="mdl-navigation__link" href="chat.html">Chat</a>
+        <a class="mdl-navigation__link" href="../index.html">Back to Web115</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+   <span class="mdl-layout-title">411 on Autism</span>
+    <nav class="mdl-navigation">
+    <a class="mdl-navigation__link" href="index.html">Home</a>
+     <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
+        <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
+        <a class="mdl-navigation__link" href="events.html">Past events</a>
+        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="members.html">Members</a>
+        <a class="mdl-navigation__link" href="contact.html">Contact</a>
+        <a class="mdl-navigation__link" href="chat.html">Chat</a>
+        <a class="mdl-navigation__link" href="../index.html">Back to Web115</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  <h1>News</h1>
+  </main>
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">411 on Autism</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li>Free use: 411 Autism on Autism</li>
+    </ul>
+  </div>
+</footer> 
+ </div>
 </body>
-</html>
+<div id="container"/>
+<script>
+  var button = document.createElement('button');
+  var textNode = document.createTextNode('Click Me!');
+  button.appendChild(textNode);
+  button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
+  componentHandler.upgradeElement(button);
+  document.getElementById('container').appendChild(button);
+</script>
+</html> 
