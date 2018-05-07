@@ -22,15 +22,26 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <a class="mdl-navigation__link" href="index.html"><h3>411 on Autism</h3></a><img src="assets/logo.png" alt="logo of 411 on Autism." class="logo">
+      <a class="mdl-navigation__link" href="index.html"><img src="assets/logo.png" alt="logo of 411 on Autism." class="logo"></a>
+        <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+            <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="sample6">
+            <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+            </div>
+            </div>
+        </form>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
         <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
-        <a class="mdl-navigation__link" href="events.html">Past events</a>
-        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="past-events.html">Past events</a>
+        <a class="mdl-navigation__link" href="current-events.html">Current events</a>
         <a class="mdl-navigation__link" href="members.html">Members</a>
         <a class="mdl-navigation__link" href="contact.html">Contact</a>
         <a class="mdl-navigation__link" href="chat.html">Chat</a>
@@ -44,8 +55,8 @@
     <a class="mdl-navigation__link" href="index.html">Home</a>
      <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
         <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
-        <a class="mdl-navigation__link" href="events.html">Past events</a>
-        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="past-events.html">Past events</a>
+        <a class="mdl-navigation__link" href="current-events.html">Current events</a>
         <a class="mdl-navigation__link" href="members.html">Members</a>
         <a class="mdl-navigation__link" href="contact.html">Contact</a>
         <a class="mdl-navigation__link" href="chat.html">Chat</a>
@@ -54,6 +65,44 @@
   </div>
   <main class="mdl-layout__content">
   <h1>Members</h1>
+  <h3>Number of members<div class="material-icons mdl-badge mdl-badge--overlap margin-effect" data-badge="7">account_box</div></h3>
+ <ul class="demo-list-item mdl-list">
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      President: Ty 
+    </span>
+  </li>
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      Vice President: Sidra 
+    </span>
+  </li>
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      Noelia-Treasurer
+    </span>
+  </li>
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      Mathew-Club counsel rap 
+    </span>
+  </li>
+   <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      Justin-Member
+    </span>
+   </li>
+   <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+        D.J.-Member
+    </span>
+   </li>
+    <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+        Denise-Club sponsor/secretary  
+    </span>
+   </li>
+</ul>
   </main>
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
@@ -66,12 +115,4 @@
  </div>
 </body>
 <div id="container"/>
-<script>
-  var button = document.createElement('button');
-  var textNode = document.createTextNode('Click Me!');
-  button.appendChild(textNode);
-  button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
-  componentHandler.upgradeElement(button);
-  document.getElementById('container').appendChild(button);
-</script>
 </html> 

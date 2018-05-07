@@ -20,17 +20,28 @@
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
+<div class="mdl-layout__header-row">
       <!-- Title -->
-      <a class="mdl-navigation__link" href="index.html"><h3>411 on Autism</h3></a><img src="assets/logo.png" alt="logo of 411 on Autism." class="logo">
+      <a class="mdl-navigation__link" href="index.html"><img src="assets/logo.png" alt="logo of 411 on Autism." class="logo"></a>
+        <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+            <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="sample6">
+            <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+            </div>
+            </div>
+        </form>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
         <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
-        <a class="mdl-navigation__link" href="events.html">Past events</a>
-        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="past-events.html">Past events</a>
+        <a class="mdl-navigation__link" href="current-events.html">Current events</a>
         <a class="mdl-navigation__link" href="members.html">Members</a>
         <a class="mdl-navigation__link" href="contact.html">Contact</a>
         <a class="mdl-navigation__link" href="chat.html">Chat</a>
@@ -44,8 +55,8 @@
     <a class="mdl-navigation__link" href="index.html">Home</a>
      <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
         <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
-        <a class="mdl-navigation__link" href="events.html">Past events</a>
-        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="past-events.html">Past events</a>
+        <a class="mdl-navigation__link" href="current-events.html">Current events</a>
         <a class="mdl-navigation__link" href="members.html">Members</a>
         <a class="mdl-navigation__link" href="contact.html">Contact</a>
         <a class="mdl-navigation__link" href="chat.html">Chat</a>
@@ -54,6 +65,52 @@
   </div>
   <main class="mdl-layout__content">
   <h1>Fun facts</h1>
+  <button id="demo-menu-lower-left"
+        class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">more_vert</i>
+</button>
+
+<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-left">
+  <li><a class="mdl-menu__item" href="fun-facts.html#what">What is Autism</a></li>
+  <li><a class="mdl-menu__item" href="fun-facts.html#famous">Famous people with Autism</a></li>
+  <li><a class="mdl-menu__item" href="fun-facts.html#history">History of Autism</a></li>
+  <li><a class="mdl-menu__item" href="fun-facts.html#Do-dont">Do's, don'ts, and Autism</a></li>
+</ul>
+ <h2 id='what'><a name='what'></a>What is Autism</h2>
+ <p>First off Autism is a trait. People can tell you it’s where people struggle with social skills, understanding verbal and visual cues, they rock, have sensitivity to any of their five senses, but to us it’s more than that.
+Can someone tell you in one or two words what is Japan? “Yeah, people are smart there.”
+Correct answer: no you can’t and Autism is the same way. Believe it or not some of us have fantastic social skills and can give speeches.
+</p>
+ <h2 id='famous'><a name='famous'></a>Famous people with Autism</h2>
+     <p>Satoshi Tajiri- The inventor of Pokémon</p>
+     <p>Alexander Graham Bell- The inventor of the phone</p>
+     <p>Lewis Carroll-The author of Alice in Wonderland</p>
+     <p>Beethoven-A famous musician</p>
+ <h2 id='history'><a name='history'></a>History of Autism</h2>
+    <p>1908: Eugen Bleuler was the first to use this term after studying patients with schizophrenia. </p>
+    <p>1943- Leo Kanner publishes a report describing 11 children who were sheltered and in their own world borrowing the term Autistic to describe them. Leo Kanner was the first to recognize that Autism was not a form of schizophrenia or being mentally handicapped in anyway, but rather to struggle with social norms.</p>
+    <p>1944-Hans Asperger diagnoses a less severe form of Autism known as Asperger’s, later this creates the Autism spectrum.</p>
+    <p>1967-Bruno Bettelheim formed a false theory where mothers who were distant or cruel, later this theory were proven false.</p>
+    <p>1977- Research is being done on two twins finding out that it can be biological.</p>
+    <p>1980-Autism is no longer compared with schizophrenia and is now listed as a disorder. </p>
+    <p>1987- Ivar Lovaas publishes an article on how to help children with Autism, with means of behavior therapy, it’s also no longer referred to as “infantile autism” and instead referred to as “Autism disorder”.</p>
+    <p>1988-Rain Man a movie featuring a man with Autism comes to theatres, however due to this movie a stereotype is built and people in Hollywood start playing all characters with Autism like Rain Man.</p>
+    <p>1991-People start recognizing Autism on a spectrum and giving service to the kids who have Autism services they need.</p>
+    <p>1994- Asperger’s starts being recognized as another form of Autism, just lower on the spectrum.</p>
+    <p>1998-A false claim was made were vaccines cause Autism, Page semi-protected Andrew Wakefield  who made this claim had his doctors license taken away.</p>
+    <p>2000-Though this claim is false people start worrying and thimerosal is removed vaccines. </p>
+    <p>2009- 1 in 110 people are diagnosed with Autism, later this easement increases.</p>
+    <p>2013-Autism and Asperger’s are now an umbrella term, were every person with Autism does have some sort of challenges with something social related, like social communication and/or interaction or/and restricted and/or repetitive behaviors.  However, every person with Autism is different; again a lot of us love making friends, are public speakers, and have great social skills like anyone else. It’s like any other disability, for example are ALL blind people completely blind? If you answered yes you don’t get out enough, if you answered no then same thing with Autism.</p>
+ <h2 id='do-dont'><a name='do-dont'></a>Do's, don'ts, and Autism</h2>
+ <h3>Do's</h3>
+     <p>Invite a friend who has Autism to hang out, they have interests and lives like anyone else </p>
+     <p>Study and learn more about Autism</p>
+     <p>Join organizations and clubs, learn more about the culture.</p>
+ <h3>Don't</h3>
+      <p>Assume and ask things like "But you are outgoing!?" remember people with Autism CAN be outgoing, there are different kinds, for example being colorblind and being legally blind, both visual impairments, but have different symptoms.</p>
+      <p>Say inapriopriate things like "But you don't LOOK Autistic?" Autistic isn't a visual characteristic</p>
+      <p>Make fun of someone or exclude someone who has Autism, remember they want friends just like anyone else.</p>
   </main>
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
@@ -65,13 +122,4 @@
 </footer> 
  </div>
 </body>
-<div id="container"/>
-<script>
-  var button = document.createElement('button');
-  var textNode = document.createTextNode('Click Me!');
-  button.appendChild(textNode);
-  button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
-  componentHandler.upgradeElement(button);
-  document.getElementById('container').appendChild(button);
-</script>
 </html> 

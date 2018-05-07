@@ -1,7 +1,5 @@
 .mdl-layout__content {
-    padding: 15px;
-    align-items: center;
-    justify-content: center;
+    margin: 36px;
 }
 
 .logo {
@@ -9,13 +7,21 @@
 }
 
 .demo-card-wide.mdl-card {
-  width: 1500px;
+  width: 1300px;
 }
-.demo-card-wide > .mdl-card__title {
-  height: 164px;
-  width: 311px;
-  background: url('assets/logo.png') center / cover;
+
+.demo-card-wide. > .mdl-card__title {
+    height: 700px;
+    width: 1200px;
+     color: white;
 }
+
+.mdl-card__title-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .margin-effect {
     margin: 15px;
 }
@@ -31,4 +37,53 @@
     display: flex;
     justify-content: center;
     align-items: center;  
+}
+
+.contact-chip {
+    display: flex;
+    flex-flow: column;
+    width: 163px;
+}
+
+.contact-chip li {
+   margin: 15px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.message-box {
+    display: flex;
+    flex-flow: row;
+    border: 1px solid purple;
+    padding: 5px;
+    width: 200px;
+    margin-left: 52px;
+}
+div.gallery1 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery1:hover {
+    border: 1px solid #777;
+}
+
+div.gallery1 img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.message-us {
+    display: flex;
+    flex-flow: column;
+    width: 500px;
 }

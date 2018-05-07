@@ -20,17 +20,28 @@
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
+<div class="mdl-layout__header-row">
       <!-- Title -->
-      <a class="mdl-navigation__link" href="index.html"><h3>411 on Autism</h3></a><img src="assets/logo.png" alt="logo of 411 on Autism." class="logo">
+      <a class="mdl-navigation__link" href="index.html"><img src="assets/logo.png" alt="logo of 411 on Autism." class="logo"></a>
+        <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+            <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="sample6">
+            <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+            </div>
+            </div>
+        </form>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
         <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
-        <a class="mdl-navigation__link" href="events.html">Past events</a>
-        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="past-events.html">Past events</a>
+        <a class="mdl-navigation__link" href="current-events.html">Current events</a>
         <a class="mdl-navigation__link" href="members.html">Members</a>
         <a class="mdl-navigation__link" href="contact.html">Contact</a>
         <a class="mdl-navigation__link" href="chat.html">Chat</a>
@@ -44,8 +55,8 @@
     <a class="mdl-navigation__link" href="index.html">Home</a>
      <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
         <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
-        <a class="mdl-navigation__link" href="events.html">Past events</a>
-        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="past-events.html">Past events</a>
+        <a class="mdl-navigation__link" href="current-events.html">Current events</a>
         <a class="mdl-navigation__link" href="members.html">Members</a>
         <a class="mdl-navigation__link" href="contact.html">Contact</a>
         <a class="mdl-navigation__link" href="chat.html">Chat</a>
@@ -54,6 +65,60 @@
   </div>
   <main class="mdl-layout__content">
   <h1>Chat</h1>
+  <ul class="contact-chip">
+  <li class="mdl-chip mdl-chip--contact">
+    <span class="mdl-chip__contact mdl-color--blue mdl-color-text--white">Y</span>
+    <button class="mdl-chip__text">Ty</button> 
+  </li>
+       <p class="message-box">On behalf of all of us here at the Autism Awareness Club, our hearts, thoughts, and prayers go out to those affected in the massacre at Las Vegas.</p>
+  <li class="mdl-chip mdl-chip--contact">
+     <span class="mdl-chip__contact mdl-color--purple mdl-color-text--white">2</span>
+     <button class="mdl-chip__text">Sidra</button>
+    </li>
+    <p class="message-box">I'm starting to work on a story and I have a question about people with Autism, I know some people get stressed in noisy situations, so if they have trouble handling noise, would a teacher give them a stress ball or something for class when like the bell rings or fire alarm?</p>
+  <li class="mdl-chip mdl-chip--contact">
+    <span class="mdl-chip__contact mdl-color--red mdl-color-text--white">1</span>
+    <button class="mdl-chip__text">Person 1</button> 
+  </li>
+   <p class="message-box">When someone is sensitive to noise, they usually have head phones. A stress ball helps with focusing. But each person with autism is different and what they use to help can be difficult but headphones are usually the first go to as professional who works with those with special needs.</p>
+  </ul>
+ <button id="show-dialog" type="button" class="mdl-button">Terms of agreement</button>
+  <dialog class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Allert</h4>
+    <div class="mdl-dialog__content">
+      <p class="messeage-box">
+        Do you agree to not use inappropriate language, say anything offensive, ect.? Remember this is a kid friendly site!
+      </p>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button">Disagree</button>
+      <button type="button" class="mdl-button close">Agree</button>
+    </div>
+  </dialog>
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+  <form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="sample3">
+    <label class="mdl-textfield__label" for="sample3">Message...</label>
+  </div>
+</form>
+ <button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised" type="button">Send message</button>
+<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
   </main>
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
@@ -65,14 +130,18 @@
 </footer> 
  </div>
 </body>
-<div id="container"/>
 <script>
-  var button = document.createElement('button');
-  var textNode = document.createTextNode('Click Me!');
-  button.appendChild(textNode);
-  button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
-  componentHandler.upgradeElement(button);
-  document.getElementById('container').appendChild(button);
+(function() {
+  'use strict';
+  window['counter'] = 0;
+  var snackbarContainer = document.querySelector('#demo-toast-example');
+  var showToastButton = document.querySelector('#demo-show-toast');
+  showToastButton.addEventListener('click', function() {
+    'use strict';
+    var data = {message: 'message sent ' + ++counter};
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  });
+}());
 </script>
 </html>    
 

@@ -20,17 +20,28 @@
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
+<div class="mdl-layout__header-row">
       <!-- Title -->
-      <a class="mdl-navigation__link" href="index.html"><h3>411 on Autism</h3></a><img src="assets/logo.png" alt="logo of 411 on Autism." class="logo">
+      <a class="mdl-navigation__link" href="index.html"><img src="assets/logo.png" alt="logo of 411 on Autism." class="logo"></a>
+        <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+            <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" id="sample6">
+            <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+            </div>
+            </div>
+        </form>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
         <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
-        <a class="mdl-navigation__link" href="events.html">Past events</a>
-        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="past-events.html">Past events</a>
+        <a class="mdl-navigation__link" href="current-events.html">Current events</a>
         <a class="mdl-navigation__link" href="members.html">Members</a>
         <a class="mdl-navigation__link" href="contact.html">Contact</a>
         <a class="mdl-navigation__link" href="chat.html">Chat</a>
@@ -44,8 +55,8 @@
     <a class="mdl-navigation__link" href="index.html">Home</a>
      <a class="mdl-navigation__link" href="fun-facts.html">Fun facts</a>
         <a class="mdl-navigation__link" href="gallery.html">Gallery</a>
-        <a class="mdl-navigation__link" href="events.html">Past events</a>
-        <a class="mdl-navigation__link" href="news.html">Current events</a>
+        <a class="mdl-navigation__link" href="past-events.html">Past events</a>
+        <a class="mdl-navigation__link" href="current-events.html">Current events</a>
         <a class="mdl-navigation__link" href="members.html">Members</a>
         <a class="mdl-navigation__link" href="contact.html">Contact</a>
         <a class="mdl-navigation__link" href="chat.html">Chat</a>
@@ -53,8 +64,29 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
-  <h1>Contact</h1>
-  </main>
+      <h1>Contact</h1>
+      <ul class="contact-chip">
+      <li class="mdl-chip mdl-chip--contact">
+        <img class="mdl-chip__contact" src="assets/facebook-icon.png" alt="logo of facebook, we do not own this">
+        <span class="mdl-chip__text"><a href="https://www.facebook.com/MCCAutismAwarenessGroup/">Facebook</a></span>
+      </li>
+      <li class="mdl-chip mdl-chip--contact margin-effect">
+         <img class="mdl-chip__contact" src="assets/yahoo-logo.png" alt="logo of yahoo, we do not own this">
+        <span class="mdl-chip__text"><a href="mailto:college.mcc@yahoo.com">Yahoo</a></span>
+      </li>
+      </ul>
+      <h2>Contact us!</h2>
+        <form action="mailto:college.mcc@yahoo.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Comment:<br>
+            <input type="text" name="comment" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+</main>
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
     <div class="mdl-logo">411 on Autism</div>
@@ -65,13 +97,4 @@
 </footer> 
  </div>
 </body>
-<div id="container"/>
-<script>
-  var button = document.createElement('button');
-  var textNode = document.createTextNode('Click Me!');
-  button.appendChild(textNode);
-  button.className = 'mdl-button mdl-js-button mdl-js-ripple-effect';
-  componentHandler.upgradeElement(button);
-  document.getElementById('container').appendChild(button);
-</script>
 </html> 
